@@ -1,6 +1,9 @@
 #!/bin/sh
 
 zshrc() {
+    # Install gitstatusd manually to speed things up and avoid installation prompt in container shell
+    mkdir -p ~/.cache/gitstatus && cp ./.cache/gitstatus/gitstatusd-linux-x86_64 ~/.cache/gitstatus/gitstatusd-linux-x86_64 
+
     echo "==========================================================="
     echo "             cloning zsh-autosuggestions                   "
     echo "-----------------------------------------------------------"
@@ -28,3 +31,4 @@ sudo ln -fs /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 sudo dpkg-reconfigure --frontend noninteractive tzdata
 
 zshrc
+zsh
