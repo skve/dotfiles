@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # For the MOTD
-sudo apt-get install lolcat
+sudo apt update && apt-get -y install lolcat
 
 zshrc() {
     echo "==========================================================="
@@ -31,4 +31,4 @@ sudo ln -fs /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 sudo dpkg-reconfigure --frontend noninteractive tzdata
 
 # launches the zsh command prompt when I launch my CodeSpace instead of bash
-zshrc
+zsh
