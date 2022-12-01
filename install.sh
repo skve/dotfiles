@@ -28,7 +28,4 @@ zshrc() {
 
 # change time zone
 sudo ln -fs /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
-sudo dpkg-reconfigure --frontend noninteractive tzdata
-
-# launches the zsh command prompt when I launch my CodeSpace instead of bash
-zsh
+# sudo dpkg-reconfigure --frontend noninteractive tzdata
