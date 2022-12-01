@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# For the MOTD
-sudo apt update && apt-get -y install lolcat
-
 zshrc() {
     echo "==========================================================="
     echo "             cloning zsh-autosuggestions                   "
@@ -28,4 +25,6 @@ zshrc() {
 
 # change time zone
 sudo ln -fs /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
-# sudo dpkg-reconfigure --frontend noninteractive tzdata
+sudo dpkg-reconfigure --frontend noninteractive tzdata
+
+zshrc
