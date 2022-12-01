@@ -17,11 +17,11 @@ zshrc() {
     echo "-----------------------------------------------------------"
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
     echo "==========================================================="
-    echo "             import zshrc                                  "
+    echo "             imports zshrc                                 "
     echo "-----------------------------------------------------------"
     cat .zshrc > $HOME/.zshrc
     echo "==========================================================="
-    echo "             import powerlevel10k                          "
+    echo "             imports powerlevel10k                         "
     echo "-----------------------------------------------------------"
     cat .p10k.zsh > $HOME/.p10k.zsh
 }
