@@ -1,4 +1,4 @@
-cat ~/.ascii | lolcat
+# cat ~/.ascii | lolcat
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -104,14 +104,14 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-eval $(thefuck --alias)
-eval "$(fnm env --use-on-cd)"
+# eval $(thefuck --alias)
+# eval "$(fnm env --use-on-cd)"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-ulimit -n 65536
-path=("${HOME}/.local/bin" $path) ; path+=("${HOME}/bin") ; export PATH
-eval "$(asdf exec direnv hook zsh)"
-direnv() { asdf exec direnv "$@"; }
+#export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+#ulimit -n 65536
+#path=("${HOME}/.local/bin" $path) ; path+=("${HOME}/bin") ; export PATH
+#eval "$(asdf exec direnv hook zsh)"
+#direnv() { asdf exec direnv "$@"; }
 
 if [[ "${terminfo[kcuu1]}" != "" ]]; then
   autoload -U up-line-or-beginning-search
@@ -125,5 +125,5 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
   bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 fi
 
-export NVM_DIR="/Users/lukeshiels/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#export NVM_DIR="/Users/lukeshiels/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
